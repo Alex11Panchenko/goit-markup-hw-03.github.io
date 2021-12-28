@@ -1,0 +1,243 @@
+/*белый #ffffff; */
+/*цвет фона #2F303A; */
+/*акцент #2196F3; */
+/* прозрачный color: rgba(255, 255, 255, 0.6);*/
+
+:root {
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+  --acent-color: #2196f3;
+  --basic-white-color: #ffffff;
+  --primary-background-color: #2f303a;
+  --batton-background-color: #f5f4fa;
+}
+
+header {
+  background-color: #ccc;
+  width: 1200px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--basic-white-color);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*--------Шапка--------*/
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--acent-color);
+}
+.part-dark {
+  color: #1f1f1f;
+}
+.part-ligt {
+  color: var(--basic-white-color);
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+.nav-link:hover,
+:focus {
+  color: var(--acent-color);
+}
+.nav-link.current {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--acent-color);
+}
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.header-link:hover,
+:focus {
+  color: var(--acent-color);
+}
+
+/*--------Герой--------*/
+
+.hero {
+  background-color: var(--primary-background-color);
+  width: 1600px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.button {
+  font-family: inherit;
+  background-color: var(--acent-color);
+  color: var(--basic-white-color);
+  cursor: pointer;
+  padding: 10px, 32px;
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 200px;
+  height: 30px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+button:hover,
+:focus {
+  background-color: #188ce8;
+}
+
+.filtre-button {
+  font-family: inherit;
+  background-color: var(--batton-background-color);
+  cursor: pointer;
+}
+.filtre-button:hover,
+:focus {
+  color: var(--basic-white-color);
+  background-color: var(--acent-color);
+}
+.pointer {
+  color: var(--basic-white-color);
+  background-color: var(--acent-color);
+}
+.button:hover:focus {
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--basic-white-color);
+}
+
+/*--------Особенности--------*/
+
+.conteiner {
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.features,
+.p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/*--------Чем мы занимаемся--------*/
+
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.products {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.description {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.filtre-link {
+  text-decoration: none;
+}
+
+/*--------Наша команда--------*/
+
+.team {
+  background-color: var(--batton-background-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team-profession {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/*--------Подвал--------*/
+
+footer {
+  background-color: var(--primary-background-color);
+}
+.google-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--basic-white-color);
+  text-decoration: none;
+}
+.footer-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
