@@ -27,6 +27,17 @@ ul {
   margin: 0;
 }
 
+.features-title,
+p,
+h3 {
+  margin: 0;
+}
+
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /*--------Шапка--------*/
 .logo {
   font-family: Raleway, sans-serif;
@@ -131,6 +142,11 @@ button:hover,
 }
 .button:hover:focus {
 }
+
+.hero {
+  margin-bottom: 94px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -141,9 +157,6 @@ button:hover,
 
 /*--------Особенности--------*/
 
-.conteiner {
-}
-
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -151,6 +164,13 @@ button:hover,
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.features {
+  background-color: aqua;
+  margin-bottom: 94px;
 }
 
 .features,
@@ -163,6 +183,11 @@ button:hover,
 
 /*--------Чем мы занимаемся--------*/
 
+.work {
+  background-color: blueviolet;
+  margin-bottom: 94px;
+}
+
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -170,6 +195,9 @@ button:hover,
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 .products {
@@ -196,6 +224,10 @@ button:hover,
   background-color: var(--batton-background-color);
 }
 
+.team-list {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -203,6 +235,8 @@ button:hover,
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .team-name {
   font-weight: 500;
@@ -211,6 +245,8 @@ button:hover,
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .team-profession {
   font-size: 16px;
