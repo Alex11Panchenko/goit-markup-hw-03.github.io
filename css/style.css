@@ -10,12 +10,18 @@
   --basic-white-color: #ffffff;
   --primary-background-color: #2f303a;
   --batton-background-color: #f5f4fa;
+  --border-color: #ececec;
 }
 
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--basic-white-color);
 }
+
+img {
+  display: block;
+}
+
 ul,
 p,
 h3 {
@@ -30,7 +36,7 @@ h3 {
 }
 
 .conteiner {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -41,14 +47,24 @@ h3 {
   display: flex;
   align-items: center;
 }
+
+header {
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+  border-bottom-width: 1px;
+}
+
 /*--------Шапка--------*/
 
 .site-nav {
-  display: flex;
   margin-left: 93px;
 }
 
-.site-nav .item + .item {
+.list-nav {
+  display: flex;
+}
+
+.list-nav .item + .item {
   margin-left: 50px;
 }
 
@@ -118,11 +134,13 @@ h3 {
 
 /*--------Герой--------*/
 
-.hero {
+.section-hero {
   background-color: var(--primary-background-color);
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -134,7 +152,6 @@ h3 {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  padding-top: 200px;
   margin-bottom: 30px;
 }
 
@@ -151,10 +168,6 @@ h3 {
 button:hover,
 :focus {
   background-color: #188ce8;
-}
-
-.button-conteiner {
-  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -202,9 +215,12 @@ button:hover,
   flex-wrap: wrap;
 }
 .previev-element {
-  width: 380px;
+  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+  border-bottom-width: 1px;
 }
 .previev :nth-child(3n) {
   margin-right: 0;
@@ -222,7 +238,7 @@ button:hover,
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
-  margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -293,7 +309,6 @@ button:hover,
 
 .team-photo {
   margin-top: 0;
-  margin-bottom: 30px;
 }
 .team-title {
   font-weight: 700;
@@ -331,6 +346,11 @@ button:hover,
 .team-list .item + .item {
   margin-left: 30px;
 }
+
+.team-elements {
+  padding: 30px 61px 30px 62px;
+}
+
 /*--------Подвал--------*/
 
 footer {
