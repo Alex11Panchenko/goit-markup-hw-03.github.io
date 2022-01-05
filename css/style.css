@@ -229,6 +229,10 @@ button:hover,
   margin-bottom: 0;
 }
 
+.filtre-element {
+  padding: 20px 24px;
+}
+
 /*--------Особенности--------*/
 
 .features-title {
@@ -346,9 +350,9 @@ button:hover,
 .team-list .item + .item {
   margin-left: 30px;
 }
-
 .team-elements {
-  padding: 30px 61px 30px 62px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*--------Подвал--------*/
@@ -373,11 +377,17 @@ footer {
   text-decoration: none;
 }
 
-.footer-logo {
+.element-logo {
   padding-top: 60px;
+  margin-bottom: 20px;
+}
+.address-list {
+  padding-bottom: 60px;
+}
+.address-list li {
+  margin-bottom: 9px;
 }
 
-.address-list {
-  margin-top: 20px;
-  padding-bottom: 60px;
+.address-list :last-child {
+  margin-bottom: 0;
 }
