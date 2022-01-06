@@ -138,21 +138,22 @@ header {
   background-color: var(--primary-background-color);
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--basic-white-color);
   padding: 0;
-  margin: 0;
+  margin: auto;
   margin-bottom: 30px;
+  width: 696px;
 }
 
 .button {
@@ -170,14 +171,6 @@ button:hover,
   background-color: #188ce8;
 }
 
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  color: var(--basic-white-color);
-}
-
 /* кнопки портфолио */
 
 .filtre-button {
@@ -185,8 +178,8 @@ button:hover,
   background-color: var(--batton-background-color);
   cursor: pointer;
   background: #f5f4fa;
-  border-radius: 4px;
   padding: 6px 22px;
+  border: none;
 }
 .filtre-button:hover,
 :focus {
@@ -218,19 +211,42 @@ button:hover,
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--border-color);
-  border-bottom-width: 1px;
 }
-.previev :nth-child(3n) {
+
+.previev-element:nth-child(3n) {
   margin-right: 0;
 }
-.previev:nth-last-child(3) {
+
+.previev-element:nth-child(n + 7) {
   margin-bottom: 0;
 }
 
 .filtre-element {
   padding: 20px 24px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+  border-bottom-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--border-color);
+  border-right-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--border-color);
+  border-left-width: 1px;
+}
+
+.products {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
+.description {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 /*--------Особенности--------*/
@@ -268,6 +284,10 @@ button:hover,
 
 /*--------Чем мы занимаемся--------*/
 
+.section-work {
+  padding-bottom: 94px;
+}
+
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -278,20 +298,6 @@ button:hover,
   margin-top: 0;
   margin-bottom: 50px;
   padding: 0;
-}
-
-.products {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-.description {
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .filtre-link {
@@ -352,13 +358,18 @@ button:hover,
 }
 .team-elements {
   padding-top: 30px;
-  padding-bottom: 30px;
+}
+
+.item {
+  background-color: var(--basic-white-color);
 }
 
 /*--------Подвал--------*/
 
 footer {
   background-color: var(--primary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .google-link {
   font-style: normal;
@@ -377,17 +388,14 @@ footer {
   text-decoration: none;
 }
 
-.element-logo {
-  padding-top: 60px;
-  margin-bottom: 20px;
-}
-.address-list {
-  padding-bottom: 60px;
-}
 .address-list li {
+  display: block;
   margin-bottom: 9px;
 }
 
 .address-list :last-child {
   margin-bottom: 0;
+}
+.address-list :first-child {
+  margin-top: 20px;
 }
